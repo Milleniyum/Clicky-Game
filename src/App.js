@@ -37,11 +37,11 @@ class App extends Component {
     this.state.characters.forEach(character => {
       if (character.id === id && !character.clicked) {
         character.clicked = true;
-        this.setState({ statusClass: "correct", score: this.state.score + 1 });
+        this.setState({ cardClass: "click-item", statusClass: "correct", score: this.state.score + 1 });
         (this.state.score === this.state.characters.length -1) ? this.setState({ statusText: "You won!", topScore: this.state.characters.length, score: 0 }) : this.setState({ statusText: "Great! Choose another!" });
       } else if (character.id === id && character.clicked) {
         if (this.state.score > this.state.topScore) this.setState({ topScore: this.state.score });
-        this.setState({ statusText: "Oops! Already chosen!", statusClass: "incorrect", score: 0 });
+        this.setState({ cardClass: "click-item shake", statusText: "Oops! Already chosen!", statusClass: "incorrect", score: 0 });
         this.state.characters.forEach(character => character.clicked = false);
       }
     })
