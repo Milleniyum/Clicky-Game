@@ -1,0 +1,62 @@
+[
+  {
+    "id" : 1,
+    "name": "draco",
+    "image": "./images/hp/draco.jpg"
+  },
+  {
+    "id" : 2,
+    "name": "dumbledore",
+    "image": "./images/hp/dumbledore.jpg"
+  },
+  {
+    "id" : 3,
+    "name": "ginny",
+    "image": "./images/hp/ginny.jpg"
+  },
+  {
+    "id" : 4,
+    "name": "hagrid",
+    "image": "./images/hp/hagrid.jpg"
+  },
+  {
+    "id" : 5,
+    "name": "harry",
+    "image": "./images/hp/harry.jpg"
+  },
+  {
+    "id" : 6,
+    "name": "hermione",
+    "image": "./images/hp/hermione.jpg"
+  },
+  {
+    "id" : 7,
+    "name": "luna",
+    "image": "./images/hp/luna.jpg"
+  },
+  {
+    "id" : 8,
+    "name": "mcgonagall",
+    "image": "./images/hp/mcgonagall.jpg"
+  },
+  {
+    "id" : 9,
+    "name": "ron",
+    "image": "./images/hp/ron.jpg"
+  },
+  {
+    "id" : 10,
+    "name": "snape",
+    "image": "./images/hp/snape.jpg"
+  },
+  {
+    "id" : 11,
+    "name": "umbridge",
+    "image": "./images/hp/umbridge.jpg"
+  },
+  {
+    "id" : 12,
+    "name": "voldemort",
+    "image": "./images/hp/voldemort.jpg"
+  }
+]
