@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "10bd73183c05656722e1",
-    "url": "/Clicky-Game/static/css/main.da2da733.chunk.css"
+    "revision": "e8928ddc017207656cc3",
+    "url": "/Clicky-Game/static/css/main.f5bbe5b9.chunk.css"
   },
   {
-    "revision": "10bd73183c05656722e1",
-    "url": "/Clicky-Game/static/js/main.294abb63.chunk.js"
+    "revision": "e8928ddc017207656cc3",
+    "url": "/Clicky-Game/static/js/main.739f6422.chunk.js"
   },
   {
     "revision": "fab82da4d9420c34bc57",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/Clicky-Game/static/media/dark-paths.7d917551.png"
   },
   {
-    "revision": "3b00a9242ae6454d9b28879731061677",
+    "revision": "b3419991df058ba59bcce45fae0d5e14",
     "url": "/Clicky-Game/index.html"
   }
 ];
