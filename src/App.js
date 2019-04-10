@@ -42,10 +42,22 @@ class App extends Component {
       if (character.id === id && !character.clicked) {
         character.clicked = true;
         this.setState({ cardClass: "click-item", statusClass: "correct", score: this.state.score + 1 });
-        (this.state.score === this.state.characters.length -1) ? this.setState({ statusText: "You won!", topScore: this.state.characters.length, score: 0 }) : this.setState({ statusText: "Great! Choose another!" });
+
+        //Determine if user won
+        if (this.state.score === this.state.characters.length - 1) {
+          this.setState({ statusText: "You won!", topScore: this.state.characters.length, score: 0 });
+          this.state.characters.forEach(character => character.clicked = false);
+        } else {
+          this.setState({ statusText: "Great! Choose another!" });
+        };
+
       } else if (character.id === id && character.clicked) {
+        //Determine if top score bested
         if (this.state.score > this.state.topScore) this.setState({ topScore: this.state.score });
+
         this.setState({ cardClass: "click-item shake", statusText: "Oops! Already chosen!", statusClass: "incorrect", score: 0 });
+
+        //Reset the click status of each character
         this.state.characters.forEach(character => character.clicked = false);
       }
     })
