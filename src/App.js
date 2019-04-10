@@ -18,6 +18,10 @@ class App extends Component {
     cardClass: "click-item"
   }
 
+  componentDidMount() {
+    this.shuffleCards(this.state.characters);
+  };
+
   shuffleCards = (characters) => {
     const shuffled = [];
     const chosen = [];
@@ -49,6 +53,10 @@ class App extends Component {
     this.shuffleCards(this.state.characters);
   }
 
+  updateStatusClass = () => {
+    this.setState({ statusClass: ""});
+  }
+
   render() {
     return (
       <Wrapper>
@@ -58,6 +66,7 @@ class App extends Component {
           homeAddress={this.state.homeAddress}
           statusText={this.state.statusText}
           statusClass={this.state.statusClass}
+          updateStatusClass={this.updateStatusClass}
         ></NavBar>
         <Jumbotron />
         <div className="container">
